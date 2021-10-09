@@ -1,0 +1,27 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+let x = 0;
+
+
+function draw() {
+  background(220);
+fill(204, 101, 192, 127);
+rect(5, 35, 40, 40);
+rect(355, 35, 40, 40); 
+rect(5, 185, 40, 40);
+rect(355, 185, 40, 40);
+rect(355, 105, 40, 40);
+rect(355, 255, 40, 40);
+if (x > 385) {
+    x = 0;
+  }
+fill('yellow');
+ellipse(x, 55, 40, 40);
+  x = x + 0.5;
+fill('green');
+ellipse(x, 205, 40, 40);
+  x = x + 0.5;
+}
+  
